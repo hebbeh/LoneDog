@@ -23,3 +23,154 @@
   content: "|";
   padding-right: 0.3em;
 }
+
+/*Images*/
+.avatar_container{
+    width: 120px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 40px;
+    margin-bottom:20px;
+}
+
+.profile{
+	color:#FAFAFF;
+	text-align: center;
+	margin-top: 10px;
+}
+
+.avatar{
+	width: 120px;
+    display:inline-block;
+    /*
+    border-radius: 70px;
+    -webkit-border-radius: 70px;
+    -moz-border-radius: 70px;*/
+    /*background: url(images/ludde_stor.png) no-repeat;*/
+    /*float: right;*/
+    overflow: hidden;
+    /*
+    border-style: solid;
+    border-width: 2px;
+    border-color: white;*/
+}
+
+.avatar img{
+	width:100%;
+}
+
+/*Grid*/
+ .two.columns{
+ 	background-color: #273469;
+ 	height:100vh;
+ }
+
+  .status_icon{
+ 	background-color: #414756;
+ 	height:20vw;
+ }
+
+  .statistics{
+ 	height:100%;
+ 	background-color: #30343F;
+ 	overflow: hidden;
+ }
+
+.options{
+ 	background-color: #FAFAFF;
+ 	height:10vh;
+ }
+
+body{
+	margin:0;
+	font-family: 'Roboto', sans-serif;
+	color:#FAFAFF;
+}
+
+ /*Percentage*/
+.mood_container{
+	overflow:hidden;
+	padding-top:10px;
+	padding-bottom:15px;
+	/*margin-right:auto;
+	margin-left: auto:*/
+}
+
+.mood{
+	background-color: #30343F;
+	overflow: hidden;
+	width:200px;
+	padding:10px;
+	float: left;
+	margin:20px;
+	margin-bottom:10px;
+	margin-top:0px;
+}
+
+.meter_container{
+	overflow:hidden;
+	width:200px;
+	margin-right:auto;
+	margin-left:auto;
+}
+
+ .meter { 
+	height: 10px;  /* Can be anything */
+	position: relative;
+	background: #555;
+	-moz-border-radius: 25px;
+	-webkit-border-radius: 25px;
+	border-radius: 25px;
+	padding: 10px;
+	box-shadow: inset 0 -1px 1px rgba(255,255,255,0.3);
+}
+
+.meter > span {
+  display: block;
+  height: 100%;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  background-color: rgb(43,194,83);
+  background-image: linear-gradient(
+    center bottom,
+    rgb(43,194,83) 37%,
+    rgb(84,240,84) 69%
+  );
+  box-shadow: 
+    inset 0 2px 9px  rgba(255,255,255,0.3),
+    inset 0 -2px 6px rgba(0,0,0,0.4);
+  position: relative;
+  overflow: hidden;
+}
+
+.meter > span:after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+  background-image: linear-gradient(
+    -45deg, 
+    rgba(255, 255, 255, .2) 25%, 
+    transparent 25%, 
+    transparent 50%, 
+    rgba(255, 255, 255, .2) 50%, 
+    rgba(255, 255, 255, .2) 75%, 
+    transparent 75%, 
+    transparent
+  );
+  z-index: 1;
+  background-size: 50px 50px;
+  animation: move 2s linear infinite;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  overflow: hidden;
+}
+
+/*Fonts*/
+.statistics p{
+    margin-bottom: 0.9rem;
+    margin-left:10px;
+}
