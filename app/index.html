@@ -33,6 +33,9 @@
   <title>My AngularJS App</title>
   <meta name="description" content="">
 
+  <!-- JS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="https://use.fontawesome.com/e85b70dd82.js"></script>
   <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
 <body ng-controller="MainCtrl">
@@ -53,6 +56,21 @@
       <div class="avatar"><img src="images/ludde_stor.png"></img></div>
           <div class="profile">Ludde</div>
     </div>
+    <div class="menu_item" style="border-top:2px solid #8D8E8B;">
+    <i class="fa fa-home" aria-hidden="true"></i> <span>Dashboard</span>
+    </div>
+    <div class="menu_item">
+    <i class="fa fa-tasks" aria-hidden="true"></i> <span>Tasks</span>
+    </div>
+    <div class="menu_item">
+    <i class="fa fa-area-chart" aria-hidden="true"></i> <span>Statistics</span>
+    </div>  
+    <div class="menu_item">
+    <i class="fa fa-cog" aria-hidden="true"></i> <span>Settings</span>
+    </div>
+    <div class="menu_item">
+    <i class="fa fa-info-circle" aria-hidden="true"></i> <span>Tutorial</span>
+    </div>              
   </div>
 
   <div class="status_icon">
@@ -65,7 +83,7 @@
           <p>{{phone.snippet}}</p>
           <div class="meter_container">
             <div class="meter">
-              <span style="width: 25%"></span>
+              <span></span>
             </div>
           </div>
       </div>
@@ -75,13 +93,13 @@
   <div class="options">
     <div class="opt_container">
       <div class="option">
-          <p>Games</p>
+          <p>GAMES</p>
       </div>
       <div class="option">
-          <p>Video</p>
+          <p>VIDEO</p>
       </div>
       <div class="option">
-          <p>Statistics</p>
+          <p>HISTORY</p>
       </div> 
     </div>           
   </div>

@@ -26,15 +26,18 @@
 
 /*Images*/
 .avatar_container{
-    width: 120px;
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 40px;
-    margin-bottom:20px;
+  width: 120px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 40px;
+  margin-bottom:30px;
+  font-size: 16px;
+  color:#011627;
+  font-weight: bold;
 }
 
 .profile{
-	color:#FAFAFF;
+	color:#011627;
 	text-align: center;
 	margin-top: 10px;
 }
@@ -42,6 +45,7 @@
 .avatar{
 	width: 120px;
     display:inline-block;
+
     /*
     border-radius: 70px;
     -webkit-border-radius: 70px;
@@ -61,24 +65,27 @@
 
 /*Grid*/
  .two.columns{
- 	background-color: #273469;
+ 	background-color: #EDF2F4;
+  color:black;
  	height:100vh;
- 	width:35vh;
+ 	width:18vw;
+  border-right: 3px solid #E71D36;
+  color:#011627;
  }
 
   .status_icon{
- 	background-color: #414756;
- 	height:20vw;
+ 	background-color: #011627;
+ 	height:40vh;
  }
 
   .statistics{
  	height:100%;
- 	background-color: #30343F;
+ 	background-color: #011627;
  	overflow: hidden;
  }
 
 .options{
- 	background-color: #FAFAFF;
+ 	background-color: #EDF2F4;
  	height:100%;
  	overflow: hidden;
  }
@@ -86,40 +93,68 @@
 body{
 	margin:0;
 	font-family: 'Roboto', sans-serif;
+  font-size: 14px;
 	color:#FAFAFF;
+  background-color: #E71D36;
+}
+
+/*Menu*/
+.menu_item{
+  overflow:hidden;
+  width:auto;
+  border-bottom:2px solid #8D8E8B;
+  padding-left:10px;
+  padding-top:5px;
+  padding-bottom:5px;
+}
+
+.menu_item span{
+  width:15vw;
+  float:right;
 }
 
 /*Options*/
 .opt_container{
 	overflow:hidden;
-	padding-top:10px;
-	padding-bottom:15px;
 	width:100vw;
+  height:100%;
+  border-top: 4px solid #B1C0D6;
+  text-align: center;
 	/*margin-right:auto;
 	margin-left: auto:*/
 }
 
 .option{
-	background-color: #30343F;
+	background-color: #F9FFF7;
+  color:#011627;
 	overflow: hidden;
+  font-weight:bold;
 	width:26.6vw;
 	padding:10px;
+  padding-top:25px;
+  padding-bottom:25px;
 	float: left;
 	margin:0px;
-	height:100%;
+  border-right: 4px solid #B1C0D6;
+  border-bottom: 4px solid #B1C0D6;
+	/*height:100%;*/
+  font-size: 16px;
+  text-align: center;
+  line-height: 50px;
+  height: 50px;
 }
 
  /*Percentage*/
 .mood_container{
 	overflow:hidden;
-	padding-top:10px;
-	padding-bottom:15px;
+	padding-top:20px;
+	padding-bottom:25px;
 	/*margin-right:auto;
 	margin-left: auto:*/
 }
 
 .mood{
-	background-color: #30343F;
+	background-color: #011627;
 	overflow: hidden;
 	width:200px;
 	padding:10px;
@@ -137,17 +172,18 @@ body{
 }
 
  .meter { 
-	height: 10px;  /* Can be anything */
+	height: 12px;  /* Can be anything */
 	position: relative;
 	background: #555;
 	-moz-border-radius: 25px;
 	-webkit-border-radius: 25px;
 	border-radius: 25px;
-	padding: 10px;
+	padding: 7px;
 	box-shadow: inset 0 -1px 1px rgba(255,255,255,0.3);
 }
 
 .meter > span {
+  width:80%;
   display: block;
   height: 100%;
   border-top-right-radius: 8px;
