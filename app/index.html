@@ -78,8 +78,9 @@
 
   <div class="statistics">
     <div class="mood_container">
-      <div class="mood" ng-repeat="phone in phones">
-          <span>{{phone.name}}</span>
+      <div class="mood" ng-repeat="phone in phones" id="{{phone.name}}"> 
+          <span>{{phone.name}}</span> <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+
           <p>{{phone.snippet}}</p>
           <div class="meter_container">
             <div class="meter">

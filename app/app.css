@@ -203,6 +203,35 @@ body{
   overflow: hidden;
 }
 
+/*Specific values for meters*/
+#Bladder .meter > span{
+  width:15%;
+}
+
+#Bladder .fa.fa-exclamation-circle{
+  display: initial;
+  color:#E71D36;
+}
+
+#Fun .meter > span{
+  width:75%;
+}
+
+#Stress .meter > span{
+  width:95%;
+}
+
+#Thirst .meter > span{
+  width:40%;
+}
+
+/*Meter notifications*/
+.fa.fa-exclamation-circle{
+  font-size: 14px;
+  display:none;
+  padding-left:10px;
+}
+
 .meter > span:after {
   content: "";
   position: absolute;
